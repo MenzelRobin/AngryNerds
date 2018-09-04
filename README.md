@@ -1,4 +1,4 @@
-# AngryNerds_WIP
+# AngryNerds
 
 Hallo Nerds!
 
