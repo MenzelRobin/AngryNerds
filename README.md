@@ -16,6 +16,7 @@ Hilfe dazu z.B. hier:
 >
 > To import this project follow the instructions: 
 > - https://github.com/dogriffiths/HeadFirstAndroid/wiki/How-to-open-a-project-in-Android-Studio
+> or here: http://lmgtfy.com/?q=How+to+import+GitHub+Repository+with+Android+Studio
 
 Ansonsten einfach mal Fragen.
 
