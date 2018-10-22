@@ -1,0 +1,2 @@
+will contain services that can be called in the activities
+Vorschlag: Trennung zwischen DataServices(get) und ActionServices(set)
