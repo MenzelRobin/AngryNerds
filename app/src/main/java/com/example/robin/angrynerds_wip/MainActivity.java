@@ -1,7 +1,9 @@
 package com.example.robin.angrynerds_wip;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +11,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+
+    public void onClickMain(View view) {
+        Intent intent = new Intent(this, OverviewActivity.class);
+        //intent.putExtra("ID", 5); // Hier können eigene Parameter hinzugefügt werden.
+        this.startActivity(intent); // Activity Starten
+    }
+
+    public void onClickEvent(View view) {
+        Intent intent = new Intent(this, OverviewActivity.class);
+        //intent.putExtra("ID", 5); // Hier können eigene Parameter hinzugefügt werden.
+        this.startActivity(intent); // Activity Starten
+    }
+
+    public void onClickTodo(View view) {
+        Intent intent = new Intent(this, OverviewActivity.class);
+        //intent.putExtra("ID", 5); // Hier können eigene Parameter hinzugefügt werden.
+        this.startActivity(intent); // Activity Starten
+    }
+
+    public void onClickNote(View view) {
+        Intent intent = new Intent(this, OverviewActivity.class);
+        //intent.putExtra("ID", 5); // Hier können eigene Parameter hinzugefügt werden.
+        this.startActivity(intent); // Activity Starten
     }
 }
