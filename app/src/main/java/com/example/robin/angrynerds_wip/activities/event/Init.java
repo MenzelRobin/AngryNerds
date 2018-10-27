@@ -3,10 +3,11 @@ package com.example.robin.angrynerds_wip.activities.event;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 //import com.example.robin.angrynerds_wip.activities.Data;
 
-public class Init extends Activity {
+public class Init extends AppCompatActivity {
 
     //private Data mData;
     private Gui mGui;
