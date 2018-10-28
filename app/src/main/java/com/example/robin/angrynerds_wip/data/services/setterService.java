@@ -7,26 +7,36 @@ import com.example.robin.angrynerds_wip.data.models.tens.Todo;
 
 public class setterService {
 
-    public static void setTodo(Todo newTodo){
-        int id = newTodo.getID();
-        //TODO polymorphie problem  beheben
+    public static void saveTEN(TEN newTEN) {
+        int id = newTEN.getID();
         TEN oldTEN = getterService.getByID(id);
-		//Todo oldTodo = getterService.getByID(id);
-		//TODO einzelne attribute ändern
-		//oldTodo.setX(newTodo.getX);
-    }
-	
-	public static void setEvent(Event newEvent){
-        int id = newEvent.getID();
-		//Event oldEvent = getterService.getByID(id);
-		//oldEvent.setX(newEvent.getX);
-    }
-	
-	public static void setNote(Note newNote){
-        int id = newNote.getID();
-		//Note oldNote = getterService.getByID(id);
-		//oldNote.setX(newEvent.getX);
+        if (oldTEN.getClass() == Todo.class) {
+            setTodo(oldTEN, newTEN);
+        } else if (oldTEN.getClass() == Event.class) {
+            setEvent(oldTEN, newTEN);
+        } else if (oldTEN.getClass() == Note.class) {
+            setNote(oldTEN, newTEN);
+        } else { //TODO throw exception or log msg
+            System.out.println("Something went wrong at saveTEN");
+        }
     }
 
-    
+    private static void setTodo(TEN oldTodo, TEN newTodo) {
+
+        //TODO einzelne attribute ändern
+        //oldTodo.setX(newTodo.getX);
+    }
+
+    private static void setEvent(TEN oldEvent, TEN newEvent) {
+        oldEvent.setColor(newEvent.getColor());
+        oldEvent.setTitle(newEvent.getTitle());
+    }
+
+    private static void setNote(TEN oldNote, TEN newNote) {
+
+        //TODO einzelne setter aufrufen
+        //oldNote.setX(newEvent.getX);
+    }
+
+
 }
