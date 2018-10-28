@@ -1,7 +1,26 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
 public class Note extends TEN{
-    public Note(String title){
-        super(title);
+
+    private String description;
+
+    //Constructors
+    public Note(String title, int[] bgColors){
+        super(title, bgColors);
+    }
+
+    public Note(String title, int[] bgColors, String description){
+        super(title, bgColors);
+        this.description = description;
+    }
+
+    //Getter and Setter
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
