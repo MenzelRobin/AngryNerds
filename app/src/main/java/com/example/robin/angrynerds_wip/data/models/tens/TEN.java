@@ -1,5 +1,7 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
+import java.util.Random;
+
 public class TEN {
     private String title;
     private int ID;
@@ -14,10 +16,10 @@ public class TEN {
         this.color = color;
     }
 
-    public TEN(String title) {
-        this.color = (int) Math.random() * 255 * 255 * 255;
-        this.ID = TEN.nextID;
-        TEN.nextID++;
+    //Constructor for random color. Color array from colors.xml has to be handed over from activity.
+    public TEN(String title, int[] bgColors) {
+        this.color = bgColors[new Random().nextInt(bgColors.length)];
+        this.ID = TEN.nextID++;
         this.title=title;
     }
 
@@ -42,5 +44,4 @@ public class TEN {
     public void setColor(int color) {
         this.color = color;
     }
-
 }
