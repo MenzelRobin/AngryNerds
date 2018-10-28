@@ -1,7 +1,53 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
+import com.example.robin.angrynerds_wip.data.models.utils.Task;
+
 public class Todo extends TEN {
-    public Todo(String title){
-        super(title);
+
+    private double progress;
+    private String note;
+    private Task[] tasks;
+
+    //Constructors
+    public Todo(String title, int[] bgColors){
+        super(title, bgColors);
+        tasks = new Task[]{new Task("",false)};
+        progress = calculateProgress();
+    }
+
+    public Todo(String title, int[] bgColors, String note){
+        super(title, bgColors);
+        this.note = note;
+        tasks = new Task[]{new Task("",false)};
+    }
+
+    public Todo(String title, int[] bgColors, String note, Task[] tasks){
+        super(title, bgColors);
+        this.note = note;
+        this.tasks = tasks;
+    }
+
+    //Getters and Setters
+    public double getProgress(){return progress;}
+
+    public String getNote(){return note;}
+    public void setNote(String note){this.note = note;}
+
+    public Task[] getTasks() {return tasks;}
+    public void setTasks(Task[] tasks){this.tasks = tasks;}
+
+    public double calculateProgress(){
+        int completed = 0;
+
+        if(tasks == null)
+            return 0;
+
+        for(Task task:tasks){
+            if(task.getStatus() == true)
+                completed++;
+        }
+
+        progress = completed/tasks.length;
+        return progress;
     }
 }

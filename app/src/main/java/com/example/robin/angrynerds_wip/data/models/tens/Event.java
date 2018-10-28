@@ -1,6 +1,7 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
 import com.example.robin.angrynerds_wip.data.models.utils.Adress;
+import com.example.robin.angrynerds_wip.data.models.utils.RecurringType;
 
 import java.util.Date;
 
@@ -8,41 +9,39 @@ public class Event extends TEN {
     private Date time;
     private Date [] reminder;
     private Adress adress;
-    private boolean yearly;
+    private RecurringType recurringType;
 
     //Constructor
-
-
-    public Event(String title, Date time, Date[] reminder) {
-        super(title);
+    public Event(String title, int[] bgColors, Date time, Date[] reminder) {
+        super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
         this.adress = null;
-        this.yearly = false;
+        this.recurringType = RecurringType.NONE;
     }
 
-    public Event(String title, Date time, Date[] reminder, Adress adress) {
-        super(title);
+    public Event(String title, int[] bgColors, Date time, Date[] reminder, Adress adress) {
+        super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
         this.adress = adress;
-        this.yearly = false;
+        this.recurringType = RecurringType.NONE;
     }
 
-    public Event(String title, Date time, Date[] reminder, Adress adress, boolean yearly) {
-        super(title);
+    public Event(String title, int[] bgColors, Date time, Date[] reminder, Adress adress, RecurringType recurringType) {
+        super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
         this.adress = adress;
-        this.yearly = yearly;
+        this.recurringType = recurringType;
     }
 
-    public Event(String title, Date time, Date[] reminder, boolean yearly) {
-        super(title);
+    public Event(String title, int[] bgColors, Date time, Date[] reminder, RecurringType recurringType) {
+        super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
         this.adress = null;
-        this.yearly = yearly;
+        this.recurringType = recurringType;
     }
 
     //Getter and Setter
@@ -70,11 +69,11 @@ public class Event extends TEN {
         this.adress = adress;
     }
 
-    public boolean isYearly() {
-        return yearly;
+    public RecurringType getRecurringType() {
+        return recurringType;
     }
 
-    public void setYearly(boolean yearly) {
-        this.yearly = yearly;
+    public void setRecurringType(RecurringType recurringType) {
+        this.recurringType = recurringType;
     }
 }
