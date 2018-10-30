@@ -25,6 +25,7 @@ public class Todo extends TEN {
         super(title, bgColors);
         this.note = note;
         this.tasks = tasks;
+        this.progress = calculateProgress();
     }
 
     //Getters and Setters
@@ -34,7 +35,10 @@ public class Todo extends TEN {
     public void setNote(String note){this.note = note;}
 
     public Task[] getTasks() {return tasks;}
-    public void setTasks(Task[] tasks){this.tasks = tasks;}
+    public void setTasks(Task[] tasks) {
+        this.tasks = tasks;
+        progress = calculateProgress();
+    }
 
     public double calculateProgress(){
         int completed = 0;
@@ -46,8 +50,6 @@ public class Todo extends TEN {
             if(task.getStatus() == true)
                 completed++;
         }
-
-        progress = completed/tasks.length;
-        return progress;
+        return (double)completed/tasks.length;
     }
 }
