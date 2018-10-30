@@ -44,6 +44,14 @@ public class Event extends TEN {
         this.recurringType = recurringType;
     }
 
+    public Event(String title, int color, Date time, Date[] reminder, Adress adress, RecurringType recurringType) {
+        super(title, color);
+        this.time = time;
+        this.reminder = reminder;
+        this.adress = adress;
+        this.recurringType = recurringType;
+    }
+
     //Getter and Setter
     public Date getTime() {
         return time;

@@ -14,6 +14,11 @@ public class Note extends TEN{
         this.description = description;
     }
 
+    public Note(String title, int color, String description){
+        super(title, color);
+        this.description = description;
+    }
+
     //Getter and Setter
 
     public String getDescription() {
