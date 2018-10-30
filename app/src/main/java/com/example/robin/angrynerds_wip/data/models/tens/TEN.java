@@ -16,6 +16,11 @@ public class TEN {
         this.color = color;
     }
 
+    public TEN(String title, int color) {
+        this.title = title;
+        this.color = color;
+    }
+
     //Constructor for random color. Color array from colors.xml has to be handed over from activity.
     //use this: int[] bgColors = getResources().getIntArray(R.array.bgColors);
     //TODO Color Array hand over from corresponding Activity

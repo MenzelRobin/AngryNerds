@@ -28,6 +28,13 @@ public class Todo extends TEN {
         this.progress = calculateProgress();
     }
 
+    public Todo(String title, int color, String note, Task[] tasks){
+        super(title, color);
+        this.note = note;
+        this.tasks = tasks;
+        this.progress = calculateProgress();
+    }
+
     //Getters and Setters
     public double getProgress(){return progress;}
 
