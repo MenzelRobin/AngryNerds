@@ -1,11 +1,13 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
+import java.util.Date;
 import java.util.Random;
 
 public class TEN {
     private String title;
     private int ID;
     private int color;
+    private long dateOfCreation;
 
     private static int nextID = 0;
 
@@ -14,11 +16,13 @@ public class TEN {
         this.title = title;
         this.ID = ID;
         this.color = color;
+        this.dateOfCreation = System.currentTimeMillis();
     }
 
     public TEN(String title, int color) {
         this.title = title;
         this.color = color;
+        this.dateOfCreation = System.currentTimeMillis();
     }
 
     //Constructor for random color. Color array from colors.xml has to be handed over from activity.
@@ -28,6 +32,7 @@ public class TEN {
         this.color = bgColors[new Random().nextInt(bgColors.length)];
         this.ID = TEN.nextID++;
         this.title=title;
+        this.dateOfCreation = System.currentTimeMillis();
     }
 
     //Getter and Setter
