@@ -7,6 +7,7 @@ import com.example.robin.angrynerds_wip.data.models.tens.Todo;
 
 public class getterService {
 
+    //TODO tatsächliche Objekte zurückgeben
     public static TEN[] getAll(){
         TEN[] arTENs = null;
         return arTENs;
@@ -15,6 +16,21 @@ public class getterService {
     public static TEN getByID(int id){
         TEN ten = null;
         return ten;
+    }
+
+    public static Todo getTodoByID(int id) {
+        Todo todo = null;
+        return todo;
+    }
+
+    public static Event getEventByID(int id) {
+        Event event = null;
+        return event;
+    }
+
+    public static Note getNoteByID(int id) {
+        Note note = null;
+        return note;
     }
 	
 	public static Todo[] getAllTodos(){
