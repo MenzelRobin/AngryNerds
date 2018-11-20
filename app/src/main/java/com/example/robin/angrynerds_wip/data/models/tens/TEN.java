@@ -5,14 +5,14 @@ import java.util.Random;
 
 public class TEN {
     private String title;
-    private int ID;
+    private String ID;
     private int color;
     private long dateOfCreation;
 
     private static int nextID = 0;
 
     //Constructor
-    public TEN(String title, int ID, int color) {
+    public TEN(String title, String ID, int color) {
         this.title = title;
         this.ID = ID;
         this.color = color;
@@ -30,7 +30,6 @@ public class TEN {
     //TODO Color Array hand over from corresponding Activity
     public TEN(String title, int[] bgColors) {
         this.color = bgColors[new Random().nextInt(bgColors.length)];
-        this.ID = TEN.nextID++;
         this.title=title;
         this.dateOfCreation = System.currentTimeMillis();
     }
@@ -42,7 +41,7 @@ public class TEN {
     public void setTitle(String title) {
         this.title = title;
     }
-    public int getID() {
+    public String getID() {
         return ID;
     }
     public int getColor() {
