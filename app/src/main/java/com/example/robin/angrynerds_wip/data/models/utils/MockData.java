@@ -1,7 +1,7 @@
 package com.example.robin.angrynerds_wip.data.models.utils;
 
 import android.graphics.Color;
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
 
 import com.example.robin.angrynerds_wip.data.models.tens.Event;
 import com.example.robin.angrynerds_wip.data.models.tens.Note;
