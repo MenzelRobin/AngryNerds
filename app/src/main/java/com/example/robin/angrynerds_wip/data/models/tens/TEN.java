@@ -39,19 +39,15 @@ public class TEN {
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
-
     public int getID() {
         return ID;
     }
-
     public int getColor() {
         return color;
     }
-
     public void setColor(int color) {
         this.color = color;
     }

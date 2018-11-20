@@ -56,31 +56,24 @@ public class Event extends TEN {
     public Date getTime() {
         return time;
     }
-
     public void setTime(Date time) {
         this.time = time;
     }
-
     public Date[] getReminder() {
         return reminder;
     }
-
     public void setReminder(Date[] reminder) {
         this.reminder = reminder;
     }
-
     public Adress getAdress() {
         return adress;
     }
-
     public void setAdress(Adress adress) {
         this.adress = adress;
     }
-
     public RecurringType getRecurringType() {
         return recurringType;
     }
-
     public void setRecurringType(RecurringType recurringType) {
         this.recurringType = recurringType;
     }
