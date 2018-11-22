@@ -5,12 +5,15 @@ import com.example.robin.angrynerds_wip.data.models.tens.Note;
 import com.example.robin.angrynerds_wip.data.models.tens.Todo;
 
 public class setterService {
+    /*
 
-    /* Ruthild Gilles (16.11.2018)
+     */
+/* Ruthild Gilles (16.11.2018)
      Methode "saveTEN" kann für jede Art von TEN aufgerufen werden.
      Werden weitere Attribute in den jeweiligen TEN Klassen hinzugefügt oder geändert,
      müssen auch hier die Methoden angepasst werden.
-    */
+    *//*
+
 
     public static void saveTEN(Todo newTodo) {
         int id = newTodo.getID();
@@ -39,5 +42,6 @@ public class setterService {
         oldNote.setColor(newNote.getColor());
         oldNote.setDescription(newNote.getDescription());
     }
+*/
 
 }
