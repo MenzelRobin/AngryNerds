@@ -10,11 +10,8 @@ import com.example.robin.angrynerds_wip.data.models.tens.Todo;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collection;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class MockData {
 
@@ -56,7 +53,7 @@ public class MockData {
         for(int i = 1; i<=10 ;i++){
         tenMockData.add(new Todo("Todo " + i, bgColors[i-1], "This is a toDo.", tasks ));
         tenMockData.add(new Event("Event " + i, bgColors[i-1], Calendar.getInstance().getTime(), reminder ,
-                new Adress("Schlossallee", 1, "50674", "Köln"), recurringTypes[i/2 + 1]));
+                new Address("Schlossallee", 1, "50674", "Köln"), recurringTypes[i/2 + 1]));
         tenMockData.add(new Note("Note " + i, bgColors[i-1], "This is a note."));
         }
     }

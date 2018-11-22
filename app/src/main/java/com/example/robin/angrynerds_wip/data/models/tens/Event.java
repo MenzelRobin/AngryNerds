@@ -1,6 +1,6 @@
 package com.example.robin.angrynerds_wip.data.models.tens;
 
-import com.example.robin.angrynerds_wip.data.models.utils.Adress;
+import com.example.robin.angrynerds_wip.data.models.utils.Address;
 import com.example.robin.angrynerds_wip.data.models.utils.RecurringType;
 
 import java.util.Date;
@@ -8,7 +8,7 @@ import java.util.Date;
 public class Event extends TEN {
     private Date time;
     private Date [] reminder;
-    private Adress adress;
+    private Address address;
     private RecurringType recurringType;
 
     //Constructor
@@ -16,23 +16,23 @@ public class Event extends TEN {
         super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
-        this.adress = null;
+        this.address = null;
         this.recurringType = RecurringType.NONE;
     }
 
-    public Event(String title, int[] bgColors, Date time, Date[] reminder, Adress adress) {
+    public Event(String title, int[] bgColors, Date time, Date[] reminder, Address address) {
         super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
-        this.adress = adress;
+        this.address = address;
         this.recurringType = RecurringType.NONE;
     }
 
-    public Event(String title, int[] bgColors, Date time, Date[] reminder, Adress adress, RecurringType recurringType) {
+    public Event(String title, int[] bgColors, Date time, Date[] reminder, Address address, RecurringType recurringType) {
         super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
-        this.adress = adress;
+        this.address = address;
         this.recurringType = recurringType;
     }
 
@@ -40,15 +40,15 @@ public class Event extends TEN {
         super(title, bgColors);
         this.time = time;
         this.reminder = reminder;
-        this.adress = null;
+        this.address = null;
         this.recurringType = recurringType;
     }
 
-    public Event(String title, int color, Date time, Date[] reminder, Adress adress, RecurringType recurringType) {
+    public Event(String title, int color, Date time, Date[] reminder, Address address, RecurringType recurringType) {
         super(title, color);
         this.time = time;
         this.reminder = reminder;
-        this.adress = adress;
+        this.address = address;
         this.recurringType = recurringType;
     }
 
@@ -65,11 +65,11 @@ public class Event extends TEN {
     public void setReminder(Date[] reminder) {
         this.reminder = reminder;
     }
-    public Adress getAdress() {
-        return adress;
+    public Address getAddress() {
+        return address;
     }
-    public void setAdress(Adress adress) {
-        this.adress = adress;
+    public void setAddress(Address address) {
+        this.address = address;
     }
     public RecurringType getRecurringType() {
         return recurringType;

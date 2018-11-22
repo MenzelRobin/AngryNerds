@@ -1,25 +1,25 @@
 package com.example.robin.angrynerds_wip.data.models.utils;
 
-public class Adress {
+public class Address {
     private String street;
     private int houseNumber;
     private String plz;
     private String city;
 
 
-    public Adress() {
+    public Address() {
         this.street = "";
         this.houseNumber = 0;
         this.plz = "";
         this.city ="";
     }
 
-    public Adress(String plz, String city) {
+    public Address(String plz, String city) {
         this.plz = plz;
         this.city = city;
     }
 
-    public Adress(String street, int houseNumber, String plz, String city) {
+    public Address(String street, int houseNumber, String plz, String city) {
         this.street = street;
         this.houseNumber = houseNumber;
         this.plz = plz;
