@@ -29,7 +29,7 @@ public class setterService {
         Event oldEvent = getterService.getEventByID(id);
         oldEvent.setTitle(newEvent.getTitle());
         oldEvent.setColor(newEvent.getColor());
-        oldEvent.setAdress(newEvent.getAdress());
+        oldEvent.setAddress(newEvent.getAddress());
         oldEvent.setRecurringType(newEvent.getRecurringType());
         oldEvent.setReminder(newEvent.getReminder());
         oldEvent.setTime(newEvent.getTime());
