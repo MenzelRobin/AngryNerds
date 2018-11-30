@@ -12,6 +12,18 @@ public class Queries {
         return null;
     }
 
+    public static Todo getTodoByID(String id) {
+        return null;
+    }
+
+    public static Event getEventByID(String id) {
+        return null;
+    }
+
+    public static Note getNoteByID(String id) {
+        return null;
+    }
+
     //TODO Jan: Insert Befehl (neuen Eintrag anlegen; TEN hat noch keine ID)
     public static void insertTEN(TEN ten) {
 
@@ -36,4 +48,5 @@ public class Queries {
         //alle Notes sortiert nach Titel
         return null;
     }
+
 }
