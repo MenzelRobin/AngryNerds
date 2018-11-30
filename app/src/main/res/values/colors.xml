@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
     <color name="bgColor1">#DD2C00</color>
     <color name="bgColor2">#087f23</color>
     <color name="bgColor3">#00766c</color>
@@ -13,4 +14,10 @@
     <color name="bgColor8">#f57f17</color>
     <color name="bgColor9">#60e10f</color>
     <color name="bgColor10">#8c234d</color>
+=======
+    <color name="colorGreen">	#458b74</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSenf">#FFB133</color>
+    <color name="colorTransparent">#0FFFFFF</color>
+>>>>>>> 30e7a3d3a3505319cb008049c5d0ffe205c4ea61
 </resources>

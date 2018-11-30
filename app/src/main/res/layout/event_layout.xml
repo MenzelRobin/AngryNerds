@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="25dp"
+android:background="@color/colorGreen">
+
+<TextView
+    android:id="@+id/idTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:text="Team Event im Päffgen"
+    android:textSize="25dp"
+    android:textColor="@color/colorWhite"
+    />
+
+
+<TextView
+    android:id="@+id/idTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/idTitle"
+    android:text="17:30"
+    android:textSize="45dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/colorWhite"
+    />
+
+<TextView
+    android:id="@+id/idDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignBottom="@id/idTime"
+    android:text="Di, 13. Apr."
+    android:textSize="25dp"
+    android:layout_marginLeft= "30dp"
+    android:textColor="@color/colorWhite"
+    />
+
+<TextView
+    android:id="@+id/idYear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/idDate"
+    android:layout_alignRight="@id/idDate"
+    android:text="2018"
+    android:textSize="15dp"
+    android:layout_marginLeft= "30dp"
+    android:textColor="@color/colorWhite"
+    />
+
+<TextView
+    android:id="@+id/idLocation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/idTime"
+    android:layout_alignLeft="@id/idTime"
+    android:text="Friesenplatz, 44, Köln"
+    android:textSize="16dp"
+    android:layout_marginTop= "40dp"
+    android:textColor="@color/colorWhite"
+    />
+
+
+
+<ImageView
+    android:id="@+id/idSymbol"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_place_black_24dp"
+    android:layout_alignTop="@id/idLine"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dp"
+    />
+
+<View
+    android:id="@+id/idLine"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@id/idTime"
+    android:layout_alignStart="@id/idTime"
+    android:textSize="16sp"
+    android:layout_marginTop="15dp"
+    android:background="@color/colorWhite"
+    />
+
+</RelativeLayout>
