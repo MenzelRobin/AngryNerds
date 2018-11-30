@@ -15,6 +15,8 @@ import java.util.List;
 
 public class MockData {
 
+    //Statische Liste mit 10 todos, 10 Events und 10 Notes
+    //Verwendung mit MockData.tenMockData
     public static List<TEN> tenMockData = new ArrayList<>();
 
     public MockData(){
