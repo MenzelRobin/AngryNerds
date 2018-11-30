@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:background="@color/colorSenf">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Einkaufsliste"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/idMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <View
+        android:id="@+id/idLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/row1"
+        android:layout_alignStart="@id/row1"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/idCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:layout_alignParentRight="true"
+        android:text="0/12"
+        android:textSize="20dp"
+        android:layout_marginTop= "40dp"
+        android:textColor="@color/colorWhite"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/row1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@id/idMiddle"
+        android:layout_alignParentLeft="true">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox1"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox2"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/idTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/idMiddle"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox4"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox5"
+            android:text="CheckBox"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

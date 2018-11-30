@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Curry"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        />
+
+
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTitle"
+        android:layout_alignLeft="@id/idTitle"
+        android:text="Zwiebeln 1-2
+Knoblauch 1 Zähe
+Gemüse: Möhren, Zucchini, Paprika, und auf was man sonst noch Bock hat. (Broccoli, Bohnen, Blumenkohl, ...)
+Gemüsebrühe (1-2 Teelöffel Pulver)
+1 Dose Kokosmilch
+Curry 2 Teelöffel
+Paprika Pulver 1 Teelöffel
+Chilipulver nach Bedarf
+Pfeffer nach Bedarf
+Dazu einfach 🍚 Reis. "
+        android:textSize="16dp"
+        android:layout_marginTop= "15dp"
+        android:textColor="@color/colorWhite"
+        />
+
+
+    <View
+        android:id="@+id/idLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/idText"
+        android:layout_alignStart="@id/idText"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        />
+
+</RelativeLayout>
