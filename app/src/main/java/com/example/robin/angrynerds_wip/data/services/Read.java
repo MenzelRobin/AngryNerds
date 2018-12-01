@@ -1,4 +1,6 @@
-package com.example.robin.angrynerds_wip.data;
+package com.example.robin.angrynerds_wip.data.services;
+
+import android.graphics.Color;
 
 import com.example.robin.angrynerds_wip.data.models.tens.Event;
 import com.example.robin.angrynerds_wip.data.models.tens.Note;
@@ -7,26 +9,10 @@ import com.example.robin.angrynerds_wip.data.models.tens.Todo;
 import com.example.robin.angrynerds_wip.data.models.utils.MockData;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
 
-
-/*
-    Ruthild Gilles
-    Methods for activities to get and save TEN objects
- */
-public class Service {
-
-    /*--------------------------------------------------
-        Methods for saving one TEN object
-     --------------------------------------------------*/
-    public static void saveTEN(TEN newTEN) {
-        TEN oldTEN = Queries.getByID(newTEN.getID());
-        if (oldTEN == null) { //new TEN (not in database)
-            Queries.insertTEN(newTEN);
-        } else { //existing TEN (in database)
-            Queries.updateTEN(newTEN.getID(), newTEN);
-        }
-    }
+public class Read {
 
     /*--------------------------------------------------
         Method to get all TEN objects in an arraylist
@@ -58,21 +44,47 @@ public class Service {
         return allTEN;
     } */
 
+
     /*--------------------------------------------------
         Methods to get one TEN object by ID
      --------------------------------------------------*/
+
     public static Todo getTodoByID(String id) {
+        //MOCKDATEN
+
+        Todo t = new Todo("TodoTest", new int[]{Color.parseColor("#8c234d")});
+        return t;
+
+        /*
         Todo todo = Queries.getTodoByID(id);
         return todo;
+        */
     }
 
     public static Event getEventByID(String id) {
+        //MOCKDATEN
+
+        Event e = new Event("EventTest", new int[Color.parseColor("#8c9900")], Calendar.getInstance().getTime(), new Date[1540942029]);
+        return e;
+
+        /*
         Event event = Queries.getEventByID(id);
         return event;
+        */
     }
 
-    public static Note getNoteByEvent(String id) {
+    public static Note getNoteByID(String id) {
+        //MOCKDATEN
+
+        if (MockData.tenMockData.get(2) instanceof Note) {
+            Note n = (Note) MockData.tenMockData.get(2);
+            return n;
+        }
+        return null;
+        /*
         Note note = Queries.getNoteByID(id);
+
         return note;
+        */
     }
 }
