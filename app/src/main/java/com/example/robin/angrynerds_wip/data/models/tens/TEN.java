@@ -22,6 +22,7 @@ public class TEN {
     public TEN(String title, int color) {
         this.title = title;
         this.color = color;
+        this.ID = String.valueOf(nextID++); //for MockData only
         this.dateOfCreation = System.currentTimeMillis();
     }
 
