@@ -49,4 +49,7 @@ public class Queries {
         return null;
     }
 
+    //TODO Jan: Eintrag mit übergebener ID aus Datenbank löschen
+    public static void deleteTEN(String id) {
+    }
 }
